@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIT725 Task3.2P</title> 
+    <meta name="description" content="basic template for SIT725 Task3.2P">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+     #image1,#image2,#image3{
+      height: 200px;
+      width: 200px;
+     }
+     .brand-logo{
+      height: 50px;
+      width: 5%;
+      margin-top:5px;margin-left:5px ;
+     }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src='Image3.jpg' class="brand-logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel1.jpg" id='image1' alt="Hotel A">
+                    <span class="card-title">Hotel A</span>
+                </div>
+                <div class="card-content">
+                    <p>This is a luxury hotel.</p>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel2.jpg" id='image2' alt="Hotel B">
+                    <span class="card-title">Hotel B</span>
+                </div>
+                <div class="card-content">
+                    <p>This is an affordable hotel.</p>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel3.jpg" id='image3' alt="Hotel C">
+                    <span class="card-title">Hotel C</span>
+                </div>
+                <div class="card-content">
+                    <p>This is a cheap hotel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <form id="hotelForm">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="name">
+
+                <p>Select a Hotel:</p>
+                <label>
+                    <input type="radio" id="hotel1" name="hotel" value="Hotel A">
+                    <span>Hotel A</span>
+                </label><br>
+
+                <label>
+                    <input type="radio" id="hotel2" name="hotel" value="Hotel B">
+                    <span>Hotel B</span>
+                </label><br>
+
+                <label>
+                    <input type="radio" id="hotel3" name="hotel" value="Hotel C">
+                    <span>Hotel C</span>
+                </label><br>
+
+                <button type="button" class="btn waves-effect waves-light" onclick="submitFunction()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
