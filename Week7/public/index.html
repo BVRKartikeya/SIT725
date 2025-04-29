@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .brand-logo { height: 50px; width: 5%; margin: 5px; }
+        .hotel-image { height: 200px; width: 100%; }
+        #image1,#image2,#image3{
+      height: 200px;
+      width: 200px;
+     }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="Image3.jpg" class="brand-logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h4>Book a Hotel</h4>
+    <div class="row">
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel1.jpg" id='image1' alt="Hotel A">
+                    <span class="card-title">Hotel A</span>
+                </div>
+                <div class="card-content">
+                    <p>This is a luxury hotel.</p>
+                </div>
+            </div>
+        </div>
+         
+        
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel2.jpg" id='image2' alt="Hotel B">
+                    <span class="card-title">Hotel B</span>
+                </div>
+                <div class="card-content">
+                    <p>This is an affordable hotel.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col l2 s2 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="hotel3.jpg" id='image3' alt="Hotel C">
+                    <span class="card-title">Hotel C</span>
+                </div>
+                <div class="card-content">
+                    <p>This is a cheap hotel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Available Hotels</h4>
+        <div class="row" id="hotels-container"></div>
+
+        <form id="hotelForm">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="name" required>
+
+            <p>Select a Hotel:</p>
+            <div id="hotelOptions"></div>
+             
+            <button type="button" class="btn waves-effect waves-light" onclick="submitFunction()">Submit</button>
+        </form>
+        <p>Selecting random socket :<span id="number"></span></p>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
